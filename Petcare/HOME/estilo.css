@@ -1,0 +1,240 @@
+@charset "utf-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: inherit;
+}
+
+
+
+#logo {
+    position: absolute;
+    left: 85px;
+    top: -15px;
+    color: #789DBC;
+    margin-top: 30px;
+    list-style: none;
+}
+
+search-box {
+    display: flex;
+    align-items: center;
+    border: 1px solid #D3D3D3; /* Cor da borda */
+    border-radius: 10px; /* Bordas arredondadas */
+    padding: 10px;
+    background-color: #FEF9F2;
+    width: 300px; /* Ajuste o tamanho conforme necessário */
+}
+
+/* Campo de texto */
+.search-input {
+     /* Remove a borda do input */
+     padding: 9px;
+     border-radius: 50px;
+    outline: 20px; /* Remove o contorno ao focar */
+    font-size: 16px;
+    flex: 1;
+    background-color: white;
+    color: #6E6E6E; /* Cor do texto */
+}
+
+/* Ícone de busca */
+.search-icon {
+    font-size: 18px;
+    color: #000000; /* Cor do ícone */
+    margin-left: 10px;
+}
+
+nav {
+    text-align: center;
+    font-size: 24px; /* Aumentei um pouco o tamanho da fonte */
+    font-weight: bold;
+    box-shadow: 0px 0px 1px rgb(0, 0, 0); 
+    padding: 20px 0; /* Aumentei a altura da barra de navegação */
+}
+
+nav > ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav > ul > li {
+    display: inline;
+    padding: 15px 25px;
+}
+
+nav > ul > li > a {
+    color: #789DBC;
+    text-decoration: none;
+    transition: background .7s;
+    font-size: 20px; /* Ajustei o tamanho das letras para maior visibilidade */
+}
+
+nav > ul > li a:hover {
+    color: #FFE3E3;
+    background-color: #789DBC;
+    border-radius: 5px;
+    padding: 5px;
+    transform: scale(1.1);
+    z-index: 1;
+}
+
+.desconectar {
+    right: 50px;
+    position: absolute;
+
+}
+
+main {
+    text-align: center;
+}
+
+main > #intro {
+    padding: 45px;
+}
+
+main > #intro > h1 {
+
+
+    color: #789DBC;
+    font-size: 85px;
+}
+
+#caoegato, #produtos, #pai {
+    background-color: #FFE3E3;
+    margin: 25px auto;
+    box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.46);
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 90%;
+}
+
+#caoegato h1, #produtos h1, #pai h1 {
+    color: #789DBC;
+    padding: 20px;
+    border-radius: 10px;
+    
+}
+
+/* Resto do código continua igual */
+
+footer {
+    background-color: #789DBC;
+    padding: 15px 0;
+    text-align: center;
+}
+
+footer p {
+    color: #FEF9F2;
+}
+
+#box1 {
+    background-image: url(imagen/auau.jpg);
+    background-size: cover;
+}
+
+#box2 {
+    background-image: url(imagen/moiauu.JPG);
+    background-size: cover;
+}
+
+#box3 {
+    background-image: url(imagen/1.png);
+    background-size: cover;
+}
+
+#box4 {
+    background-image: url(imagen/2.png);
+    background-size: cover;
+}
+
+#box5 {
+    background-image: url(imagen/3.png);
+    background-size: cover;
+}
+
+#box6 {
+    background-image: url(imagen/4.png);
+    background-size: cover;
+}
+
+#box7 {
+    background-image: url(imagen/doguinho1.JPG);
+    background-size: cover;
+}
+
+#box8 {
+    background-image: url(imagen/doguinhos.JPG);
+    background-size: cover;
+}
+
+/* Box Style */
+#box1, #box2, #box3, #box4, #box5, #box6, #box7, #box8 {
+    display: inline-block;
+    border-radius: 15px;
+    height: 160px;
+    width: 260px;
+    box-shadow: 1px 1px 9px rgba(0, 0, 0, 0.46);
+    margin: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    
+}
+
+
+#box1:hover, 
+#box2:hover, 
+#box3:hover, 
+#box4:hover, 
+#box5:hover, 
+#box6:hover, 
+#box7:hover, 
+#box8:hover {
+    transform: scale(1.05);
+}
+
+
+/* Responsividade */
+@media (max-width: 768px) {
+    nav > ul > li {
+        display: block;
+        padding: 10px;
+    }
+
+    #caoegato, #produtos, #pai {
+        padding: 10px;
+    }
+
+    #box1, #box2, #box3, #box4, #box5, #box6, #box7, #box8 {
+        width: 90%;
+        height: 200px;
+        margin: 15px auto;
+    }
+}
+
+@media (max-width: 480px) {
+    #imglogo {
+        position: static;
+        margin: auto;
+        display: block;
+    }
+
+    nav > ul > li {
+        font-size: 18px;
+    }
+
+    main > #intro > h1 {
+        font-size: 55px;
+    }
+}
+
+footer {
+    background-color: #789DBC;
+    padding: 15px 0;
+    text-align: center;
+}
+
+footer p {
+    color: #FEF9F2;
+}

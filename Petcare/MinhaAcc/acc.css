@@ -1,0 +1,200 @@
+@charset "utf-8";
+
+*{margin: 0px;
+    padding: 0px;
+border: 0px;}
+
+body{
+    font-family: inherit;
+
+}
+
+#logo {
+    position: absolute;
+    left: 60px;
+    top: -30px;
+    color: #789DBC;
+    margin-top: 30px;
+}
+
+search-box {
+    display: flex;
+    align-items: center;
+    border: 1px solid #D3D3D3; /* Cor da borda */
+    border-radius: 10px; /* Bordas arredondadas */
+    padding: 10px;
+    background-color: #FEF9F2;
+    width: 300px; /* Ajuste o tamanho conforme necessário */
+}
+
+/* Campo de texto */
+.search-input {
+     /* Remove a borda do input */
+     padding: 9px;
+     border-radius: 50px;
+    outline: 20px; /* Remove o contorno ao focar */
+    font-size: 16px;
+    flex: 1;
+    background-color: white;
+    color: #6E6E6E; /* Cor do texto */
+}
+
+/* Ícone de busca */
+.search-icon {
+    font-size: 18px;
+    color: #000000; /* Cor do ícone */
+    margin-left: 10px;
+}
+
+nav {
+    text-align: center;
+    font-size: 24px; /* Aumentei um pouco o tamanho da fonte */
+    font-weight: bold;
+    box-shadow: 0px 0px 1px rgb(0, 0, 0);
+   
+    padding: 20px 0; /* Aumentei a altura da barra de navegação */
+}
+
+nav > ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav > ul > li {
+    display: inline;
+    padding: 15px 25px;
+}
+
+nav > ul > li > a {
+    color: #789DBC;
+    text-decoration: none;
+    transition: background .7s;
+    font-size: 20px; /* Ajustei o tamanho das letras para maior visibilidade */
+}
+
+nav > ul > li a:hover {
+    color: #FFE3E3;
+    background-color: #789DBC;
+    border-radius: 5px;
+    padding: 5px;
+    transform: scale(1.1);
+    z-index: 1;
+}
+
+
+.desconectar {
+    right: 50px;
+    position: absolute;
+
+}
+
+/* Responsividade para navegação */
+@media (max-width: 600px) {
+    nav > ul > li {
+        display: block;
+        padding: 10px;
+        text-align: center;
+    }
+}
+
+main{
+    text-align: center;
+}
+main>#intro{    
+    padding: 45px ;
+    
+}
+main>#intro>H1{
+    color:  #789DBC;
+   
+    font-size: 85px;
+    
+  
+}
+main>#intro>H2{
+    color:  #789DBC;
+    font-size: 29px;
+    height: 50px;
+
+}
+#informacao{
+    background-color: #696bcbb3;
+    padding: 6px;
+    color:  #e8e9f8;
+
+}
+#infoP{
+    background: linear-gradient(to top, rgb(152, 179, 202) 20%, rgb(255, 255, 255) 80%); /* Cor 1 e Cor 2 */
+    height: 700px;
+    box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.46);
+}
+#infoP>h1{
+padding-top: 35px;
+padding-bottom: 35px;
+color: #293040;
+font-size: 30px;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+#box1{
+    margin: auto 100px;
+    display: inline-block;
+    background-size: cover;
+    background-color: white;
+    border-radius: 25px;
+    height: 500px;
+    width: 800px;
+    box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.46);
+}
+
+.nmCSS {
+    color: #000000; 
+    font-size: 18px; 
+    margin-top: 30px;
+    padding: 20px;   
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width: 100%; 
+    max-width: 500px; 
+    box-sizing: border-box; 
+    word-wrap: break-word; 
+    white-space: normal; 
+}
+
+.emailCSS {
+    color: #000000; 
+    font-size: 18px; 
+    margin-top: 2px;
+    padding: 15px;   
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width: 100%; 
+    max-width: 500px; 
+    box-sizing: border-box;
+    word-wrap: break-word; 
+    white-space: normal; 
+}
+
+@media (max-width: 768px) {
+    .nmCSS, .emailCSS {
+        width: 100%; 
+        max-width: 100%; 
+    }
+}
+
+
+
+
+.botao, input, select{
+    padding: 10px;
+    border-radius: 20px;
+    margin: 5px auto;
+    box-shadow: none;
+}
+
+footer {
+    background-color: #789DBC;
+    padding: 15px 0;
+    text-align: center;
+}
+
+footer p {
+    color: #FEF9F2;
+}

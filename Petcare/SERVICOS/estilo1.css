@@ -1,0 +1,223 @@
+@charset "utf-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+}
+
+body{
+
+    font-family: inherit;
+}
+
+#logo {
+    position: absolute;
+    left: 60px;
+    top: -30px;
+    color: #789DBC;
+    margin-top: 30px;
+}
+
+ssearch-box {
+    display: flex;
+    align-items: center;
+    border: 1px solid #D3D3D3; /* Cor da borda */
+    border-radius: 10px; /* Bordas arredondadas */
+    padding: 10px;
+    background-color: #ff9500;
+    width: 300px; /* Ajuste o tamanho conforme necessário */
+}
+
+/* Campo de texto */
+.busca {
+     border: 2px solid;
+     padding: 10px;
+     border-radius: 50px;
+     margin-top: 20px;
+     margin-bottom: 2px;
+     margin-right: -42px;
+     outline: none; 
+        font-size: 16px;
+        flex: 1;
+    background-color: rgb(255, 255, 255);
+    color: rgb(87, 87, 87);
+}
+
+.busca::placeholder{
+    font-size: 14px;
+    color: rgb(87, 87, 87);
+}
+
+
+
+
+nav {
+    text-align: center;
+    font-size: 24px; /* Aumentei um pouco o tamanho da fonte */
+    font-weight: bold;
+    box-shadow: 0px 0px 1px rgb(0, 0, 0);
+   
+    padding: 20px 0; /* Aumentei a altura da barra de navegação */
+}
+
+nav > ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav > ul > li {
+    display: inline;
+    padding: 15px 25px;
+}
+
+nav > ul > li > a {
+    color: #789DBC;
+    text-decoration: none;
+    transition: background .7s;
+    font-size: 20px; /* Ajustei o tamanho das letras para maior visibilidade */
+}
+
+nav > ul > li a:hover {
+    color: #FFE3E3;
+    background-color: #789DBC;
+    border-radius: 5px;
+    padding: 5px;
+    transform: scale(1.1);
+    z-index: 1;
+}
+
+
+.desconectar {
+    right: 50px;
+    position: absolute;
+}
+
+/* Responsividade para navegação */
+@media (max-width: 600px) {
+    nav > ul > li {
+        display: block;
+        padding: 10px;
+        text-align: center;
+    }
+}
+
+/* Container dos cards */
+.container-pai {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.container-carrossel {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+}
+
+.card {
+    background: linear-gradient(to top, rgba(120,157,188,1) 60%, rgba(255,227,227,1) 100%); /* Cor 1 e Cor 2 */
+    border-radius: 30px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    margin: 40px;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+    transition: all 0.5s ease;
+    box-sizing: border-box;
+}
+
+.card:hover {
+    transform: scale(1.1);
+    z-index: 1;
+}
+
+.card h2 {
+    font-family: helvetica;
+    font-size: 20px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    margin-top: -40px;
+    margin-right: 50px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgba(254,249,242,1); /* Cor 3 */
+    background-color: rgba(120,157,188,1); /* Cor 1 */
+    border-radius: 10%;
+    padding: 5px 20px;
+    
+}
+
+.card .sigla {
+    font-family: helvetica;
+    font-size: 15px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    margin-left: 200px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgba(254,249,242,1); /* Cor 3 */
+    background-color: rgba(120,157,188,1); /* Cor 1 */
+    border-radius: 50%;
+    padding: 5px;
+}
+
+.card p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    margin-bottom: 30px;
+    color: rgba(254,249,242,1); /* Cor 3 */
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.card button {
+    border: none;
+    border-radius: 32px;
+    padding: 12px 40px;
+    background-color: rgb(201, 233, 210); /* Cor 4 */
+    color: rgba(120,157,188,1); /* Cor 1 */
+    font-size: 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    letter-spacing: 1px;
+}
+
+.card button a {
+    text-decoration: none;
+}
+
+.link1 {
+    text-underline-offset: -1px;
+    cursor: pointer;
+}
+
+/* Responsividade para os cards */
+@media (max-width: 600px) {
+    .container-pai {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .card {
+        width: 90%;
+        margin: 20px auto;
+    }
+}
+
+footer {
+    background-color: #789DBC;
+    padding: 15px 0;
+    text-align: center;
+}
+
+footer p {
+    color: #FEF9F2;
+}
+

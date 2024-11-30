@@ -1,0 +1,56 @@
+@page{
+    margin: 150px 50px ;
+}
+body{
+    font-family: 'Verdana', sans-serif;
+    margin:0px;
+    padding:0px;
+}
+.header{
+    position: fixed;
+    left: 0;
+    right:0;
+    top: -100px;
+    height: 50px;
+    padding: 10px;
+    background: #333;
+    margin-bottom:100px;
+    text-align: center;
+}
+.header img{
+    height: 50px;
+}
+.footer{
+    position: fixed;
+    left: 0;
+    right:0;
+    bottom:0;
+    background: #333;
+    color:#FFF;
+    text-align: center;
+    padding: 10px;
+}
+h1{
+    text-align: center;
+}
+table{
+    width: 100%;
+    border:1px solid #333;
+    padding: 5px;
+}
+table tr th{
+    background: #333;
+    color:#FFF;
+    padding:5px;
+}
+table tr:nth-child(even) td{
+    background: #EEE;
+}
+.image{
+    text-align: center;
+}
+.image img{
+    border: 1px solid #CCC;
+    padding:3px;
+    margin:5px;
+}
